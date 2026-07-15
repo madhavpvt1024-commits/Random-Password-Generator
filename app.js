@@ -11,8 +11,6 @@ copy.addEventListener("click" , ()=>{
     window.navigator.clipboard.writeText(inputEl.value);
      alertEl.classList.remove("active");
     alertEl.innerText = pass + " -Copied !!";
-   
-
 });
 
 function createPassword(){
