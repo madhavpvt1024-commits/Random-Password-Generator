@@ -1,0 +1,97 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+ #main{
+    background-color: pink;
+    height: 12rem;
+    width: 25rem;
+    padding: 0.5rem;
+    border: 0.3rem solid black;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+
+} 
+h2{
+    /* text-align: center; */
+    font-size: 1.5rem;
+    text-decoration: underline;
+
+
+}
+.password-container{
+     border: 0.1rem solid black;
+     padding: 0.27rem;
+     border-radius: 1rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    color: blue;
+}
+input::placeholder{
+    letter-spacing: 0rem;
+}
+
+#btn{
+    background-color: black;
+    color: white;
+    height: 1.8rem;
+    width: 7rem;
+    font-size: 1rem;
+    border: 0.1rem solid ;
+    border-radius: 0.7rem;
+    margin: 1rem 1rem;
+
+}
+#btn:active {
+    transform: scale(0.9);
+
+}
+
+.fa-solid{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.fa-solid:hover{
+    opacity: 1;
+}
+#btn:hover{
+    background-color: green;
+    border-radius:1rem ;
+
+}
+input:hover{
+    opacity: 1;
+}
+.alert-container{
+    position: fixed;
+    background-color: lightgreen;
+    right: 2rem;
+    bottom: 2rem;
+    height: 5rem;
+    width: 19rem;
+    border-radius: 1.3rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight:bold;
+    transition: 0.5s;
+}
+.active .alert-container{
+    right: -20rem;
+} 
